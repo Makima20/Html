@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+            width: 200px;
+            height: 200px ;
+            background-color: rgb(172, 211, 198);
+            padding: 5px;
+        }
+        .static{
+            position: static;
+            background-color: bisque;
+            width: 210px;
+            height: 60px;
+        }
+        .relative{
+            position: relative;
+            background-color: rgb(227, 173, 103);
+            left: 100px;
+            bottom: 100px;
+            width: 300px;
+        }
+        .absolute{
+            position: absolute;
+            background-color: aquamarine;
+            bottom: 20px;
+        }
+        .sticky{
+            position: sticky;
+            background-color: pink;
+            top: 300px ;
+        }
+        .fixed{
+            position: fixed;
+            background-color: rgb(223, 144, 144);
+            top: 20px;
+        }
+        .bottom{
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky">Sticky</div>
+    
+    <div class="container">
+        <div class="absolute">Absolute</div>
+    </div>
+    <div class="static">Static</div>
+    <div class="relative">Relative</div>
+    <div class="absolute">Absolute Bottom</div>
+    <div class="fixed">Fixed</div>
+    <div class="bottom">
+        <p>Scrolling</p>
+    </div>
+
+</body>
+</html>
