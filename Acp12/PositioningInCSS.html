@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://lh3.googleusercontent.com/proxy/K2VaWuRpijDQGMKLYDu7w8cXFxUhMz3Go6nPZMnjohSpd51dx58LPucPjXEBOgjgNabi-8GQuLXVaHfixn0);
+            background-repeat: no-repeat;
+            background-size: 420px 420px;
+
+        }
+
+        .relative{
+            position: relative;
+            left: 30px;
+            border: 3px solid brown;
+            background-color: rgb(164, 164, 205);
+
+        }
+         .static{
+            position: static;
+            left: 30px;
+            border: 3px solid rgb(213, 191, 191);
+            background-color: rgb(199, 225, 225);
+
+        }
+         .fixed{
+            position: fixed;
+            left: 30px;
+            border: 3px solid rgb(5, 45, 68);
+            background-color: rgb(252, 233, 191);
+        }
+         .absolute{
+            position: absolute;
+            left: 30px;
+            border: 3px solid rgb(232, 23, 173);
+            background-color: rgb(208, 227, 206);
+        }
+        .sticky{
+            position: sticky;
+            left: 30px;
+            border: 3px solid rgb(232, 23, 173);
+            background-color: rgb(234, 185, 214);
+            
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Positions</h2>
+    <p>An element with position: relative; is positioned relative to its normal postion:</p>
+    <div class="relative">
+    This div element has postion: relative;
+    </div> <br> <br>
+    <div class="fixed">
+    This div element has postion: fixed;
+    </div> <br> <br>
+    <div class="absolute">
+    This div element has postion: absolute;
+    </div> <br> <br>
+    <div class="static">
+    This div element has postion: static;
+    </div>
+    <div class="sticky">
+    This div element has postion: sticky;
+    </div>
+
+</body>
+</html>
