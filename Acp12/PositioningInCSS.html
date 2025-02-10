@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-image: url(https://lh3.googleusercontent.com/proxy/K2VaWuRpijDQGMKLYDu7w8cXFxUhMz3Go6nPZMnjohSpd51dx58LPucPjXEBOgjgNabi-8GQuLXVaHfixn0);
+        section{ 
+            background-image: url('https://lh3.googleusercontent.com/proxy/K2VaWuRpijDQGMKLYDu7w8cXFxUhMz3Go6nPZMnjohSpd51dx58LPucPjXEBOgjgNabi-8GQuLXVaHfixn0');
             background-repeat: no-repeat;
-            background-size: 420px 420px;
-
+            height: 900px;
+            width: 900px;
+            background-attachment: fixed;
+            background-position: center;
         }
+            
+        
 
         .relative{
             position: relative;
@@ -44,14 +48,16 @@
             border: 3px solid rgb(232, 23, 173);
             background-color: rgb(234, 185, 214);
             
-
         }
+
     </style>
 </head>
 <body>
     <h2>Positions</h2>
     <p>An element with position: relative; is positioned relative to its normal postion:</p>
-    <div class="relative">
+    
+    <Section>
+        <div class="relative">
     This div element has postion: relative;
     </div> <br> <br>
     <div class="fixed">
@@ -66,6 +72,7 @@
     <div class="sticky">
     This div element has postion: sticky;
     </div>
+    </Section>
 
 </body>
 </html>
