@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object and Array Operations</title>
+</head>
+
+<body>
+
+    <h2>Object and Array Operations</h2>
+    <button onclick="displayObjects()">Display Objects</button>
+    <button onclick="displayArray()">Display Array</button>
+    <button onclick="popFromArray()">Pop Last Element</button>
+
+    <p id="output"></p>
+
+    <script>
+        const student1 = { name: "Asif", age: 20, course: "Math" };
+        const student2 = { name: "Ibnat", age: 15, course: "English" };
+        const student3 = { name: "Arunav", age: 14, course: "Bangla" };
+
+        let students = [student1, student2, student3];
+
+        function displayObjects() {
+            let output = "";
+            students.forEach(student => {
+                output += Name: ${ student.name }, Age: ${ student.age }, Course: ${ student.course } <br>;
+            });
+                    document.getElementById("output").innerHTML = output;
+        }
+
+                    function displayArray() {
+                        let output = students.map(student => student.name).join(", ");
+                    document.getElementById("output").innerHTML = Students: ${output};
+        }
+
+                    function popFromArray() {
+                        students.pop();
+                    displayArray();
+        }
+    </script>
+
+</body>
+
+</html>
