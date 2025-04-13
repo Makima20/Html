@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapped and Sorted Array</title>
+</head>
+
+<body>
+    <script>
+        
+        const numbers = [5, 3, 8, 1, 4];
+
+        
+        const mapped = numbers.map(num => num * 2);
+
+        
+        const ascending = [...mapped].sort((a, b) => a - b);
+
+        
+        const descending = [...mapped].sort((a, b) => b - a);
+
+    
+        document.write("Original numbers: " + numbers + "<br>");
+        document.write("Mapped (x2): " + mapped + "<br>");
+        document.write("Ascending order: " + ascending + "<br>");
+        document.write("Descending order: " + descending + "<br>");
+    </script>
+</body>
+
+</html>
