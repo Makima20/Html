@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript class</h2>
+    <p id="s1"></p>
+    <div id="display"></div>
+    
+    <script>
+        class Student {
+            constructor(name, grade, section) {
+                this.name = name;
+                this.grade = grade;
+                this.section = section;
+
+            }
+
+            
+        }
+
+        let s1 = new Student("Ibnat", 8 , "B" )
+        document.getElementById("s1").innerHTML = `Name: ${s1.name} Grade: ${s1.grade} Section: ${s1.section}`
+
+        const display = document.getElementById("display");
+
+        students = [
+            new Student("Ibnat", 8, "B"),
+            new Student("Asif", 9 , "A"),
+            new Student("Arunav", 7 , "D"),
+            new Student("Subah", 10 , "C")
+
+        ]
+
+        students.forEach(student => {
+            const p = document.createElement('p')
+            p.innerHTML = `Name: ${student.name} Grade: ${student.grade} Section: ${student.section}`;
+
+
+            display.appendChild(p);
+
+        });
+
+
+    </script>
+</body>
+</html>

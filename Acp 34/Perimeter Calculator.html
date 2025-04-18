@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const choice = prompt("Welcome to Perimeter Calculator, \nPlease enter your choice. \n1. Rectangle. \n2.Triangle. \n3.Circle. \n4.Parallelogram")
+
+        if (choice == '1') {
+                const length = prompt("Enter the length:")
+                const width = prompt("Enter the width:")
+                const perimeter = 2 * (length + width);
+                alert("The perimeter is: " + perimeter)}
+
+        if (choice == '2') {
+                const a = prompt("Enter the side a :")
+                const b = prompt("Enter the side b :")
+                const c = prompt("Enter the side c :")
+                const perimeter = a+b+c;
+                alert("The perimeter is: " + perimeter)
+        }
+
+        if (choice == '3') {
+                const r = prompt("Enter the radius:")
+                const perimeter = 2 * (3.1416 * r);
+                alert("The perimeter is: " + perimeter)
+
+            }
+
+        if (choice == '4') {
+                const a = prompt("Enter the side a :")
+                const b = prompt("Enter the side b :")
+                const perimeter = 2 * (a+b);
+                alert("The perimeter is: " + perimeter)
+
+            }
+
+    
+    </script>
+</body>
+</html>
