@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting Numbers</title>
+    <style>
+        #counter {
+            font-size: 150px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Click the number to start/stop counting</h1>
+    </div>
+    <div id="counter" onclick="startstop()">1</div>
+
+    <script>
+        const counter = document.getElementById('counter');
+        let number = 1;
+        let stopped = true;
+        let intervalId = null;
+
+        function increment() {
+            number++;
+            counter.textContent = number;
+        }
+
+        function startstop() {
+            if (stopped) {
+                intervalId = setInterval(increment, 100);
+                stopped = false;
+            } else {
+                clearInterval(intervalId);
+                stopped = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
