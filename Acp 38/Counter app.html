@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background: #fcefe3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+        }
+
+        .counter-box {
+            background: #fff;
+            border-radius: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 40px 30px;
+            text-align: center;
+            width: 250px;
+            border: 3px solid #ddd;
+        }
+
+        .display {
+            font-size: 2.8em;
+            background: #000;
+            color: #00ffcc;
+            padding: 20px 0;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            letter-spacing: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .btn {
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 50%;
+            font-size: 2em;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.1s;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        .plus {
+            background-color: #32cd32;
+            /* green */
+            color: white;
+        }
+
+        .minus {
+            background-color: #ffd700;
+            /* yellow */
+            color: #333;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <div class="counter-box">
+            <div class="display" id="display">0000</div>
+            <div class="buttons">
+                <button class="btn plus" onclick="increment()">+</button>
+                <button class="btn minus" onclick="decrement()">−</button>
+            </div>
+        </div>
+
+        <script>
+            let count = 0;
+
+            function updateDisplay() {
+                document.getElementById('display').textContent = count.toString().padStart(4, '0');
+            }
+
+            function increment() {
+                if (count < 9999) {
+                    count++;
+                    updateDisplay();
+                }
+            }
+
+            function decrement() {
+                if (count > 0) {
+                    count--;
+                    updateDisplay();
+                }
+            }
+
+            updateDisplay(); // Initialize on load
+        </script>
+
+    </body>
+
+</html>
+</body>
+
+</html>

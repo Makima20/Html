@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        /* Sidebar Navigation */
+        nav.sidebar {
+            height: 100%;
+            width: 180px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding-top: 20px;
+        }
+
+        nav.sidebar a {
+            padding: 12px 16px;
+            text-decoration: none;
+            color: white;
+            display: block;
+            font-size: 16px;
+        }
+
+        nav.sidebar a:hover {
+            background-color: #575757;
+        }
+
+        /* Main Content */
+        .container {
+            margin-left: 200px;
+            padding: 40px 20px;
+        }
+
+        .home-content h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .home-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .home-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: crimson;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-btn:hover {
+            background-color: darkred;
+        }
+
+        .home-img img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            margin-left: 200px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            nav.sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .container,
+            footer {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <a href="#">Dashboard</a>
+        <a href="#">Projects</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="home-content">
+            <h1>Welcome to Our Space</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas molestiae repellat alias aspernatur
+                expedita beatae minima numquam consectetur accusantium sequi dolorum ipsa officia modi adipisci vero
+                quaerat, quo sit?</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="home-btn">Get Started</a>
+        </div>
+
+        <div class="home-img">
+            <img src="https://c02.purpledshub.com/uploads/sites/48/2023/04/facts-about-space-social.jpg?w=1200"
+                alt="Space Image">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Space Team. All rights reserved.</p>
+        <p>Contact us | Privacy Policy | Terms of Use</p>
+    </footer>
+
+</body>
+
+</html>
