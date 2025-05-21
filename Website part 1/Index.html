@@ -67,6 +67,63 @@
             text-align: center;
             color: aliceblue;
         }
+
+        .btn{
+            background: rgb(171, 209, 165);
+            color: rgb(9, 35, 9);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            text-decoration: double;
+            margin-top: 1rem;
+            transition: all 0.3s;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            background: rgb(133, 179, 144);
+            box-shadow: 0 8px 20px rgb(145, 174, 145);
+        }
+
+        #about{
+            padding: 6rem 2rem;
+            background-color: rgb(239, 236, 233);
+        }
+
+        .section-container{
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-img{
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgb(0, 23, 21, 18);
+            transition: transform 0.5s;
+        }
+
+        .about-img:hover{
+             transform : scale(1.05);
+        }
+
+
+        .about-img img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .about-content p{
+            margin-bottom: 20px;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -92,6 +149,19 @@
             <a href="#about" class="btn btn-outline">Learn More</a>
            </div>
         </div>
+    </section>
+
+    <section id="about">
+        <div class="section-container">
+            <h2>About our Company</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum officiis facilis quidem.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <a href="" class="btn">Our Services</a>
+        </div>
+        <div class="about-img fade-in">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="">
+        </div>
+
     </section>
 </body>
 </html>
